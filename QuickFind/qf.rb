@@ -9,14 +9,15 @@ class QuickFindUF
 		@id[p]==@id[q]
 	end
 	def union(p,q)
-		@id.map!{|id| id==@id[p] ? @id[q] : id }
+		@id = @id.map{|id| id==@id[p] ? @id[q] : id }
 	end
 end
 
 #----------------------------------------------------
-
+=begin	test
 qf = QuickFindUF.new(10)
 qf.union(1,2)
 qf.union(2,3)
 
 p qf.id
+=end

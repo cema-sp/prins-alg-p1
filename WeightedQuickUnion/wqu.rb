@@ -32,9 +32,10 @@ end
 
 
 #----------------------------------------------------
-
+=begin 	test
 qf = WeightedQUUF.new(10)
 qf.union(1,2)
 qf.union(2,3)
 
 p qf.id
+=end
